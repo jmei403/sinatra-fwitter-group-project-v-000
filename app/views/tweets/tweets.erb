@@ -1,6 +1,6 @@
 <h1>Welcome, <%= current_user.username %>!</h1>
 <h2>Look at who's tweeting!</h2>
 <% Tweet.all.each do |tweet| %>
-<p><%= tweet.user.username %>:</p>
+  <%= tweet.user.username %>:
   <%= tweet.content %>
   <% end %>
