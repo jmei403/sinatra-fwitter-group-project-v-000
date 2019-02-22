@@ -58,6 +58,7 @@ class TweetsController < ApplicationController
   end
 
   delete "/tweets/:id" do
+    binding.pry
     Tweet.destroy(params[:id])
     redirect '/tweets'
   end
