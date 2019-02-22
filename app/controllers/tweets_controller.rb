@@ -37,7 +37,7 @@ class TweetsController < ApplicationController
     erb :'/tweets/edit_tweet'
   end
 
-  post '/tweets/:id' do
+  patch '/tweets/:id' do
     @tweet = Tweet.find_by_id(params[:id])
     @tweet.update(params[:tweet])
     @tweet.save
