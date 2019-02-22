@@ -1,3 +1,8 @@
-<h1>Edit Your Post!</h1>
-<h2>Post <%= @tweet.id %></h2>
-<%= @tweet.content %>
+<h2>Edit Your Tweet</h2>
+<form method="POST" action="/tweets">
+<label>Write Content:</label><br>
+<!-- <input type="textarea" name="tweet[content]"> -->
+<textarea name="tweet[content]" id="content"></textarea>
+<br>
+<input type="submit" id="submit" value="Submit">
+</form>
