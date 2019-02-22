@@ -1,6 +1,6 @@
 <h2>Post <%= @tweet.id %></h2>
 <%= @tweet.content %>
 <form method="POST" action="/tweets/<%= @tweet.id %>">
-  <input type="hidden" name="_method" value="DELETE" />
-  <input type="submit" />
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit">
 </form>
