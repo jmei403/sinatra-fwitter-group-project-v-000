@@ -17,7 +17,6 @@ class TweetsController < ApplicationController
   end
 
   post '/tweets' do
-    binding.pry
     @tweet = Tweet.create(params[:tweet])
     binding.pry
     redirect "/tweets/#{@tweet.id}"
