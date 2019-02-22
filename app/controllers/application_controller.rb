@@ -1,6 +1,8 @@
 require './config/environment'
 
 class ApplicationController < Sinatra::Base
+  extend Slugifiable::ClassMethods
+  include Slugifiable::InstanceMethods
 
   configure do
     enable :sessions
